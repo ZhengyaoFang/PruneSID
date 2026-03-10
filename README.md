@@ -1,4 +1,22 @@
-# Code of PruneSID
+# PruneSID: Prune Redundancy, Preserve Essence
+
+This repository contains the official implementation of **"Prune Redundancy, Preserve Essence: Vision Token Compression in VLMs via Synergistic Importance-Diversity"**, which has been **accepted to ICLR 2026**.
+
+## 📢 News
+
+- **2026-03**: Our paper *"Prune Redundancy, Preserve Essence: Vision Token Compression in VLMs via Synergistic Importance-Diversity"* is **accepted to ICLR 2026**.
+
+## 📄 Paper
+
+- **Title**: Prune Redundancy, Preserve Essence: Vision Token Compression in VLMs via Synergistic Importance-Diversity  
+- **Conference**: ICLR 2026  
+- **Paper link**: *coming soon*  
+
+If you find this repository or the paper helpful in your research, please consider citing our work and starring this repository.
+
+## 🔧 Usage
+
+Below we provide example commands to reproduce PruneSID on `LLaVA` and `Qwen2-VL`.
 
 ## 1️⃣ Test on LLaVA.
 1. First install the [LLaVA](https://github.com/haotian-liu/LLaVA) environment.
@@ -72,3 +90,22 @@
       --plug_in_model prunesid_qwen2 \
       --need_token_num 64
     ```
+
+## 📚 Citation
+
+If you use PruneSID or find our paper useful in your research, please cite:
+
+```bibtex
+@inproceedings{prunesid2026,
+  title     = {Prune Redundancy, Preserve Essence: Vision Token Compression in VLMs via Synergistic Importance-Diversity},
+  author    = {Zhengyao Fang, Pengyuan Lyu, Chengquan Zhang, Guangming Lu, Jun Yu, Wenjie Pei},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026}
+}
+```
+
+We will update the BibTeX entry with publication details once they are available.
+
+## 📜 License
+
+This project is licensed under the **Apache License 2.0**.  
