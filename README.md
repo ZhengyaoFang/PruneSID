@@ -1,6 +1,6 @@
 # PruneSID: Prune Redundancy, Preserve Essence
 
-[![arXiv](https://img.shields.io/badge/arXiv-2508.03789-b31b1b.svg)](https://arxiv.org/abs/2603.09480v1)
+[![arXiv](https://img.shields.io/badge/arXiv-2603.09480-b31b1b.svg)](https://arxiv.org/abs/2603.09480)
 
 This repository contains the official implementation of **"Prune Redundancy, Preserve Essence: Vision Token Compression in VLMs via Synergistic Importance-Diversity"**, which has been **accepted to ICLR 2026**.
 
