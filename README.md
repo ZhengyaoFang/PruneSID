@@ -31,8 +31,37 @@ Below we provide example commands to reproduce PruneSID on `LLaVA` and `Qwen2-VL
     cd ..
   ```
 3. Inference examples:
+    **LLaVA-1.5**
+    ```bash
+    CUDA_VISIBLE_DEVICES=0 python3 -m accelerate.commands.launch \
+    --num_processes=1 \
+    -m lmms_eval \
+    --model llava \
+    --model_args pretrained=liuhaotian/llava-v1.5-7b \
+    --tasks mme \
+    --batch_size 1 \
+    --log_samples \
+    --log_samples_suffix llava_mme_7b \
+    --plug_in_model prunesid_llava \
+    --need_token_num 64 \
+    --output_path ./logs/
+    ```
   **LLaVA-1.5**
     **LLaVA-NeXT**
+    ```bash
+    CUDA_VISIBLE_DEVICES=0 python3 -m accelerate.commands.launch \
+    --num_processes=1 \
+    -m lmms_eval \
+    --model llava \
+    --model_args pretrained=liuhaotian/llava-v1.6-vicuna-7b \
+    --tasks mme \ 
+    --batch_size 1 \
+    --log_samples \
+    --log_samples_suffix llava_mme_7b \
+    --plug_in_model prunesid_llava \
+    --need_token_num 64 \
+    --output_path ./logs/
+    ```
 
 ## 2️⃣ Test on Qwen2-VL.
 
